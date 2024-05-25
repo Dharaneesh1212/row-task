@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Mobile responsive */
+@media (min-width: 320px) and (max-width: 425px) {
+  #first {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #one {
+    width: 11rem;
+  }
+
+  #two {
+    width: 11rem;
+  }
+
+  #three {
+    width: 11rem;
+  }
+
+  #four {
+    width: 11rem;
+  }
+}
+
+/* Tablet responsive */
+@media (min-width: 426px) and (max-width: 768px) {
+  #one {
+    width: 9rem;
+  }
+
+  #two {
+    width: 9rem;
+  }
+
+  #three {
+    width: 9rem;
+  }
+
+  #four {
+    width: 9rem;
+  }
+}
