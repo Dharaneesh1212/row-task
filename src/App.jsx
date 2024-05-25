@@ -16,7 +16,7 @@ const App = () => {
   const personMobile = (e) => {
     setNumber(e.target.value);
   };
-  const PersonPan = (e) => {
+  const personPan = (e) => {
     setPan(e.target.value);
   };
 
@@ -74,7 +74,7 @@ const App = () => {
           placeholder="Pan"
           type="text"
           value={pan}
-          onChange={PersonPan}
+          onChange={personPan}
           id="four"
         />
         <button
