@@ -35,12 +35,17 @@ const App = () => {
 
   return (
     <main className="flex flex-col gap-8 w-screen">
-      <div className="flex justify-center items-center gap-4 mt-8" id="first">
+      <form
+        className="flex justify-center items-center gap-4 mt-8"
+        id="first"
+        onSubmit={handleSubmit}
+      >
         <input
           required
           className="py-2 px-2 w-44 text-[1.1rem] border-2 border-sky-500 rounded-md capitalize"
           placeholder="Name"
           type="text"
+          value={name}
           onChange={personName}
           id="one"
         />
@@ -49,6 +54,7 @@ const App = () => {
           className="py-2 px-2 w-44 text-[1.1rem] border-2 border-sky-500 rounded-md"
           placeholder="Email"
           type="email"
+          value={email}
           onChange={personEmail}
           id="two"
         />
@@ -57,6 +63,8 @@ const App = () => {
           className="py-2 px-2 w-44 text-[1.1rem] border-2 border-sky-500 rounded-md"
           placeholder="Mobile"
           type="text"
+          name="phone"
+          value={number}
           onChange={personMobile}
           id="three"
         />
@@ -65,17 +73,18 @@ const App = () => {
           className="py-2 px-2 w-44 text-[1.1rem] border-2 border-sky-500 rounded-md"
           placeholder="Pan"
           type="text"
+          value={pan}
           onChange={PersonPan}
           id="four"
         />
         <button
           id="add"
           className="py-1 px-1 text-lg font-medium border-2 border-fuchsia-500 rounded-md"
-          onClick={handleSubmit}
+          type="submit"
         >
           Add Row
         </button>
-      </div>
+      </form>
       <div className="flex justify-center items-center">
         <button
           onClick={handleSubmit}
