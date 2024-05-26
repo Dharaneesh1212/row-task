@@ -6,8 +6,24 @@
 
 /* Mobile responsive */
 @media (min-width: 320px) and (max-width: 425px) {
+
   #first {
+    height: 100%;
+    width: 100vw;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #data{
+    margin: 1rem;
+  }
+
+  #map-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
   }
 
