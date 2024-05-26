@@ -14,7 +14,10 @@ const App = () => {
     setEmail(e.target.value);
   };
   const personMobile = (e) => {
-    setNumber(e.target.value);
+    const value = e.target.value;
+    if (/^\d*$/.test(value)) {
+      setNumber(value);
+    }
   };
   const personPan = (e) => {
     setPan(e.target.value);
